@@ -10,6 +10,7 @@ URL:		http://www.ne.jp/asahi/linux/timecop/
 BuildRequires:	X11-devel 
 BuildRequires:  xpm-devel 
 BuildRequires:  gtk+-devel = 1.2.10
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
  This is a system monitoring dockapp, visually based on the GNOME "BubbleMon"
