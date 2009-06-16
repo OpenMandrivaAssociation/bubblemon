@@ -1,11 +1,12 @@
 Summary: 	WindowMaker dockapp CPU, memory, swap and load average monitor
 Name:		bubblemon
 Version:	1.46
-Release:	%mkrel 4
-License:	GPL
+Release:	%mkrel 5
+License:	GPLv2+
 Group:          Graphical desktop/WindowMaker
 Source0:	%{name}-dockapp-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
+Patch0:		%{name}-1.46-fix-overlinking.patch
 URL:		http://www.ne.jp/asahi/linux/timecop/
 BuildRequires:	X11-devel 
 BuildRequires:  xpm-devel 
@@ -27,6 +28,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %prep
 %setup -q -n %{name}-dockapp-%{version}
+%patch0 -p1
 
 %build
 make EXTRA="-DENABLE_DUCK -DENABLE_CPU -DENABLE_MEMSCREEN" \
