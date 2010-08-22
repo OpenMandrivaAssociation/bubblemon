@@ -8,7 +8,7 @@ Source0:	%{name}-dockapp-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 Patch0:		%{name}-1.46-fix-overlinking.patch
 URL:		http://www.ne.jp/asahi/linux/timecop/
-BuildRequires:	X11-devel 
+BuildRequires:	libx11-devel
 BuildRequires:  xpm-devel 
 BuildRequires:  gtk+-devel = 1.2.10
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
