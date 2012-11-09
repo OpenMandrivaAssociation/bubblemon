@@ -1,0 +1,12 @@
+diff -p -up bubblemon-dockapp-1.46/Makefile.overlnk bubblemon-dockapp-1.46/Makefile
+--- bubblemon-dockapp-1.46/Makefile.overlnk	2003-10-04 02:22:07.000000000 +0200
++++ bubblemon-dockapp-1.46/Makefile	2009-06-16 17:33:08.000000000 +0200
+@@ -27,7 +27,7 @@ CC = gcc
+ # special things for Linux
+ ifeq ($(OS), Linux)
+     OBJS += sys_linux.o
+-    LIBS = `gtk-config --libs | sed "s/-lgtk//g"`
++    LIBS = -L/usr/lib -lgdk -rdynamic -lX11
+     INSTALL = -m 755
+ endif
+ 
