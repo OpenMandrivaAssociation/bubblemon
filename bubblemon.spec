@@ -82,3 +82,57 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%{name}.png
 %{_datadir}/applications/mandriva-%{name}.desktop
 
+
+
+%changelog
+* Sun Aug 22 2010 Funda Wang <fwang@mandriva.org> 1.46-5mdv2011.0
++ Revision: 571833
+- use libx11-devel
+
+* Tue Jun 16 2009 JÃ©rÃ´me Brenier <incubusss@mandriva.org> 1.46-5mdv2010.0
++ Revision: 386385
+- fix overlinking
+- fix license tag
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.46-4mdv2009.0
++ Revision: 243370
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.46-2mdv2008.1
++ Revision: 140691
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import bubblemon
+
+
+* Fri Sep 01 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.46-2mdv2007.0
+- XDG
+
+* Fri Jul 22 2005 Nicolas Lécureuil <neoclust@mandriva.org> 1.46-1mdk
+- New release 1.46
+
+* Sun Dec 14 2003 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 1.41-1mdk
+- 1.4.1
+- drop Prefix tag
+- fix buildrequires
+- drop explicit library dependency
+- quiet setup
+
+* Wed Jul 16 2003 HA Quôc-Viêt <viet@mandrakesoft.com> 1.4-2mdk
+- added libgtk+1.2-devel to BuildRequires thanks to
+  Michael Scherer <scherer.michael@free.fr>
+
+* Mon Feb 11 2002 HA Quôc-Viêt <viet@mandrakesoft.com> 1.4-1mdk
+- new source update.
+- icons converted from xpm to png.
+- s/Copyright/License/
+- compile options are now working.
+
+* Thu May 31 2001 HA Quôc-Viêt <viet@mandrakesoft.com> 1.32-1mdk
+- Initial release.
