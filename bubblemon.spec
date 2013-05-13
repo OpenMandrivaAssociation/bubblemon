@@ -1,7 +1,7 @@
 Summary: 	WindowMaker dockapp CPU, memory, swap and load average monitor
 Name:		bubblemon
 Version:	1.46
-Release:	%mkrel 5
+Release:	6
 License:	GPLv2+
 Group:          Graphical desktop/WindowMaker
 Source0:	%{name}-dockapp-%{version}.tar.bz2
@@ -11,7 +11,6 @@ URL:		http://www.ne.jp/asahi/linux/timecop/
 BuildRequires:	pkgconfig(x11)
 BuildRequires:  xpm-devel 
 BuildRequires:  gtk+-devel = 1.2.10
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
  This is a system monitoring dockapp, visually based on the GNOME "BubbleMon"
