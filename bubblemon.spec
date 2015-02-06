@@ -1,7 +1,7 @@
 Summary: 	WindowMaker dockapp CPU, memory, swap and load average monitor
 Name:		bubblemon
 Version:	1.46
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:          Graphical desktop/WindowMaker
 Source0:	%{name}-dockapp-%{version}.tar.bz2
