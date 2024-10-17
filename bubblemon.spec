@@ -7,7 +7,7 @@ Group:          Graphical desktop/WindowMaker
 Source0:	%{name}-dockapp-%{version}.tar.bz2
 Source1:	%{name}-icons.tar.bz2
 Patch0:		%{name}-1.46-fix-overlinking.patch
-URL:		http://www.ne.jp/asahi/linux/timecop/
+URL:		https://www.ne.jp/asahi/linux/timecop/
 BuildRequires:	pkgconfig(x11)
 BuildRequires:  xpm-devel 
 BuildRequires:  gtk+-devel = 1.2.10
